@@ -1,0 +1,15 @@
+PyQt5
+pydub
+psutil
+colorama
+beautifulsoup4
+requests
+opencv-python
+onnxruntime
+onnxruntime-gpu
+insightface
+numpy
+shodan
+PyQtWebEngine
+folium
+androguard

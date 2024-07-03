@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TheHve_MainWindow</class>
+ <widget class="QMainWindow" name="TheHve_MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1146</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../iconfiles/main_icon_files.qrc">
+    <normaloff>:/mainLogo/logo.png</normaloff>:/mainLogo/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">font: 11pt &quot;Hack&quot;;</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Welcome</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="3" column="0">
+         <widget class="QTextBrowser" name="textBrowser_systemStatus">
+          <property name="styleSheet">
+           <string notr="true">font: 14pt &quot;Hack&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QTextBrowser" name="textBrowser_WelcomeAndToolinfo">
+          <property name="styleSheet">
+           <string notr="true">font: 14pt &quot;Hack&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="Line" name="line_coolBar_tab_1">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tab 2</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar_menuController">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1146</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSecurity">
+    <property name="title">
+     <string>Security</string>
+    </property>
+    <addaction name="actionChange_Login_Password"/>
+   </widget>
+   <widget class="QMenu" name="menuOsintTools">
+    <property name="title">
+     <string>Osint Tools</string>
+    </property>
+    <addaction name="actioniban_Parser"/>
+    <addaction name="actionreverse_ip_lookup"/>
+    <addaction name="actionPhone_number_parser"/>
+    <addaction name="actionBin_Lookup"/>
+   </widget>
+   <widget class="QMenu" name="menuFile_operations">
+    <property name="title">
+     <string>File Operations</string>
+    </property>
+    <addaction name="actionVideo_frame_extractor"/>
+    <addaction name="actionSound_Converter"/>
+   </widget>
+   <widget class="QMenu" name="menuIdentify_Tools">
+    <property name="title">
+     <string>Identify Tools</string>
+    </property>
+    <widget class="QMenu" name="menuFace_Insight">
+     <property name="title">
+      <string>Face Insight</string>
+     </property>
+     <addaction name="actionFace_Detection"/>
+     <addaction name="actionFace_Verification"/>
+     <addaction name="actionFace_Recognition"/>
+    </widget>
+    <addaction name="actionVoice_verification"/>
+    <addaction name="menuFace_Insight"/>
+   </widget>
+   <widget class="QMenu" name="menuRegion_specific_only">
+    <property name="title">
+     <string>Region specific only</string>
+    </property>
+    <widget class="QMenu" name="menuTurkey_Only">
+     <property name="title">
+      <string>Türkey Only</string>
+     </property>
+     <addaction name="actionTC_Verification"/>
+     <addaction name="actionTC_Calculator"/>
+    </widget>
+    <addaction name="menuTurkey_Only"/>
+   </widget>
+   <widget class="QMenu" name="menuExternel_Madules">
+    <property name="title">
+     <string>Externel Madules</string>
+    </property>
+    <addaction name="actionimport_module"/>
+   </widget>
+   <widget class="QMenu" name="menuAnalysis">
+    <property name="title">
+     <string>Analysis</string>
+    </property>
+    <addaction name="actionAndroid_Static_Analysis"/>
+   </widget>
+   <addaction name="menuSecurity"/>
+   <addaction name="menuOsintTools"/>
+   <addaction name="menuFile_operations"/>
+   <addaction name="menuIdentify_Tools"/>
+   <addaction name="menuRegion_specific_only"/>
+   <addaction name="menuExternel_Madules"/>
+   <addaction name="menuAnalysis"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionChange_Login_Password">
+   <property name="text">
+    <string>Change Login Password</string>
+   </property>
+  </action>
+  <action name="actioniban_Parser">
+   <property name="text">
+    <string>Iban parser</string>
+   </property>
+  </action>
+  <action name="actionreverse_ip_lookup">
+   <property name="text">
+    <string>Reverse ip lookup</string>
+   </property>
+  </action>
+  <action name="actionVideo_frame_extractor">
+   <property name="text">
+    <string>Video frame extractor</string>
+   </property>
+  </action>
+  <action name="actionSound_Converter">
+   <property name="text">
+    <string>Sound Converter</string>
+   </property>
+  </action>
+  <action name="actionPhone_number_parser">
+   <property name="text">
+    <string>Phone number parser</string>
+   </property>
+  </action>
+  <action name="actionVoice_verification">
+   <property name="text">
+    <string>Voice verification</string>
+   </property>
+  </action>
+  <action name="actionFace_Detection">
+   <property name="text">
+    <string>Face Detection ( image file )</string>
+   </property>
+  </action>
+  <action name="actionFace_Verification">
+   <property name="text">
+    <string>Face Verification ( image file )</string>
+   </property>
+  </action>
+  <action name="actionFace_Recognition">
+   <property name="text">
+    <string>Face Recognition ( image file )</string>
+   </property>
+  </action>
+  <action name="actionTC_Verification">
+   <property name="text">
+    <string>TC Verification</string>
+   </property>
+  </action>
+  <action name="actionTC_Calculator">
+   <property name="text">
+    <string>TC Calculator</string>
+   </property>
+  </action>
+  <action name="actionimport_module">
+   <property name="text">
+    <string>import module</string>
+   </property>
+  </action>
+  <action name="actionBin_Lookup">
+   <property name="text">
+    <string>Bin lookup</string>
+   </property>
+  </action>
+  <action name="actionAndroid_Static_Analysis">
+   <property name="text">
+    <string>Android Static Analysis</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../iconfiles/main_icon_files.qrc"/>
+ </resources>
+ <connections/>
+</ui>
