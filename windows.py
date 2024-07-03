@@ -156,6 +156,13 @@ if currentParam.lower() == "--help":
     
 elif currentParam == "--start-hive":
     startHive()
+    
+    
+elif currentParam =="--install-pip-packaget":
+    installPipPackaget()
+    
+
+
 
 elif currentParam == "--wizard":
     p_info("Otomatik indirme başlatılıyor...")
