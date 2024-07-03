@@ -159,19 +159,13 @@ elif currentParam == "--start-hive":
 
 elif currentParam == "--wizard":
     p_info("Otomatik indirme başlatılıyor...")
-    
     executeSelf("--check-commands")
     executeSelf("--install-pip-packaget")
-    executeSelf("--generate-container")
-    p_info("container ın stabil olması için 10 saniye uyku moduna girildi...")
-    time.sleep(10)
-    executeSelf("--prepare-psql")
     executeSelf("--start-hive")
     
     
 elif currentParam == "--check-commands":
     p_info("Checking Required Commands ...")
-    checkCommands("docker")
     checkCommands("pip")
     sys.exit(0)
 
