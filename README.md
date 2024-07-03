@@ -55,6 +55,13 @@ cd TheHive
 
 <br>
 
+
+## Uyarı!
+
+PostgreSQL yerine Sqlite3 sürümü kullanıyorsanız veritabanına yüz ekleme işlemi daha yavaş gerçekleşecektir.
+Sqlite Versiyonu PostgreSQL den daha uyumlu çalışacaktır.
+
+
 ## Karşılama Ekranı
 
 <br>
