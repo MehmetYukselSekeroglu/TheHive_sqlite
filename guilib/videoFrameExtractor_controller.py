@@ -104,6 +104,8 @@ class VideoFrameExtractorPage(QWidget):
         
         self.targetVideoFile_is_selected = False
         self.targetOutputDir_is_selected = False
+        
+        self.targetVideoFile = None
     
     def threadSignalHandler(self, result_dict):
         if result_dict["end"] == True and result_dict["success"] == True:

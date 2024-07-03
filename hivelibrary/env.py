@@ -21,7 +21,7 @@ DB_DATA_TYPE__USER = "user"
 # Application value 
 APPLICATION_VENDOR_VALUE = "Prime Security"
 APPLICATION_NAME_VALUE = "The Hive Remastred"
-APPLICATION_VERSION_VALUE = "2.0.0"
+APPLICATION_VERSION_VALUE = "2.2.10"
 
 DATABASE_INIT_STATUS = "database_status"
 

@@ -434,7 +434,7 @@ class FaceRecognitionWidget(QWidget):
             return    
        
         self.MultiAdderThread = directoryAdderThread(faceAnalayserUI=self.FaceAnalysisUI,targetDirectory=self.selectedDirectory,
-            databaseConnections=self.databaseConnections,databaseCursor=self.databaseCursor,mainConfig=self.mainConfig)
+            databaseConnections=self.databaseConnections,databaseCursor=self.databaseCursor)
         self.MultiAdderThread.statusSignal.connect(self.multiAdderThreadSignalHandler)
         self.MultiAdderThread.start()
         
